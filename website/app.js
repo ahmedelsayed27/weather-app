@@ -31,7 +31,7 @@ document.getElementById('generate').addEventListener('click', async  function(){
            console.log(`the data return from api `)
            console.log(projectData)
            try {
-                postData(`http://localhost:3000/adduserdata`, projectData);
+                postData(`/adduserdata`, projectData);
                 updatecontrols();
             }
             catch (error) {
@@ -74,7 +74,7 @@ const postData = async function(url='' ,data = {}){ // default param
 /* Function to GET Project Data from server to ui controls */
 const updatecontrols = async ()=>{
     try {
-        const datareq = await fetch('http://localhost:3000/allinfo')
+        const datareq = await fetch('/allinfo')
         const projectData = await datareq.json()
         console.log("the data from server and read in updateControl ")
         console.log(projectData)
