@@ -57,7 +57,7 @@ document.getElementById('generate').addEventListener('click', async  function(){
 const postData = async function(url='' ,data = {}){ // default param
     const res = await fetch(url,{
         method:"POST",
-        // credentials: "same-origin",
+        credentials: "same-origin",
         headers: {"Content-Type":"application/json"},
         body : JSON.stringify(data)
     })
