@@ -6,7 +6,7 @@ let feeling = '';
 
 // Personal API Key for OpenWeatherMap API
 const apiKey = `&appid=ae3639cc06f9aa429c407f880dbcb52f&units=metric`
-let infoUrl = `http://api.openweathermap.org/data/2.5/weather?zip=`
+const infoUrl = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?zip=`
 
 // Create a new date instance dynamically with JS
 let d = new Date();
